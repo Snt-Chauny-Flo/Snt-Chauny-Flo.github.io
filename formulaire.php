@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Sortir en Picardie</title>
+		<link rel="SHORTCUT ICON" href="images/picardie.ico"> 
+		<link rel="stylesheet" href="style.css"/>
+    </head>
+
+    <body style="background:#FFF;font-size:1.1em">
+		<?php
+		$date=date("d-m-Y");
+		$heure=date("H:i");
+		Print("Nous sommes le $date et il est $heure");
+		?>
+	
+		<p></br> Veuillez taper votre prénom:</p>
+		<form action="resultat.php" method="post">
+		<!-- form crée un formulaire dont le résultat sera posté dans le fichier resultat.php -->
+		<p>
+			<input type="text" name="prenom"/>
+			<!-- la variable name de type texte retiendra le prénom saisi -->
+			<input type="submit" value="Valider"/>
+		</p>
+		</form>
+		
+	</body>
+</html>
